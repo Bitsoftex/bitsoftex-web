@@ -1,0 +1,27 @@
+{
+  "name": "bitsoftexnet",
+  "title": "Bitsoftex network",
+  "version": "3.3.9",
+  "homepage": "https://bitsoftex.com/",
+  "author": "Bitsoftex",
+  "license": {
+    "type": "CC-BY-NC-ND-4.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.5",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.1",
+    "gulp-header": "^1.8.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "qrcodesvg": "^1.0.2",
+    "jquery": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/bitsoftex/bitsoftex.com.git"
+  }
+}

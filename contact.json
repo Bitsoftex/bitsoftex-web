@@ -1,0 +1,21 @@
+{
+	"support": {
+		"type": "Support",
+		"name": "Bitsoftex",
+		"surname": "Support",
+		"organisation": "Bitsoftex",
+		"email": "support@bitsoftex.com",
+		"telephone": {
+			"work": "+16466988669"
+		},
+		"url": {
+			"work": "https://bitsoftex.com/"
+		},
+		"telegram": "teleg",
+		"photo": {
+			"type": "PNG",
+			"encoding": "BASE64",
+			"data": "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD1UlEQVR42u2c32oTURDGvz3NRSmlhFKlijdWESmyJKHaiqWmNoL4FD7BQsA38FIkkHfxLhEt9V/aZMMSpGCpUKTUtoRSahBJEy9Mpdbs5uTC9jun87ueizP7nZkzM2d3AUEQBEEQBEEQBEEQBEEQBEH47zjaltnCEIDPAAYJ/TgAcA25TNM0AWJ92CYAXCb1o2TiwwcA1YftFLEfVVNTUD8C3Cf2o3weBJgj9mPRbgGyhQkAY6Q+bCCX2bY9Au5I/j9bAR4S+/DxPAjAXAEt2i1AtjAMYJJ0/S0ANdsjYKrPhu00WUMus2e7AAtyAJ+tAMwVUPE8CJCSCDgrAbKFFHED1jT9AEbPw3VA8Zaf7XYFLxYaVgswvrY13VZOs59rg1N59oBqK6e0o2HrJvNXADzplKx0URwtwJftNNq0JWh5R8/uEYBnpD7UYhE7Z7wFTFhwAN8l9mFFGVr97Aa+pytAmtiPZdWjA2Yl0DFyk/kxcEdxKUqAeQvST4LYhwaAqgrZOTHyCFjWtGMeoweB7zXDIuAmgGHixeuOoOkvksIEmCFe+Gbge5sa+V+Rp6BilAA25P/rAOKmRgBz/te9gnxA7EM98L21rgK4yXy8s3tMz//MDdifIaIKaVwU8eIDTbuUCZuo24OeJl74euB7dc0GbJLYj/dRAjDn/yVNuxlTolh1Kd1SJuycHtwmL6O/hkVAAsCoBfmfuQH7q4hQBqWflo4AnTEK84vE5SgBmA/gauB7Bxp2kwCGTGkkTwrAvHNKFpSfP0/6oY6F7kXyBkx3AnqP2IfVwPf2wyKAeef8E7oRpE3yQRnSutd1BHCT+VHTovi4AMzDqyDwPZ3XShLkUVzqKkCndHMtSD/MN2ANAJWwCLgBYIR48W8taMBqge81wwSYIQ/dd5p2CdOi+EgA5huwLc0ryFvgHqMUowSw4Sv4WfIornQVwE3mRzpngOkdMPMYZQ/AelgEpME9O39jwQiiElZGK3DPzgG9CWgc3DdgoZsoRl4BbQS+t9vLyGm1Z+HQvkYfmv+PBFgBsEq6cF/H6NvVC6mB5mELcBg/wlCD33+ERrEDG3j66iWAx5Rrc5wtPJ+/FBUBZpMtxHDYMvZXOsqC/c/+InHZdgHYJ6BV2wVg/pVCE8AH2wVgnoB+Qi6zb68A2cJI5wwwMv3YEAEuuQ/LtguQJl/fa9sFYH4FpaEzYTBdAOYStKbzO2VzBfj9L9Nxkw9g0yNgjnx9RdsFmCZfX8V2AZjzf+gV5EnMnIZmC/FOA1YnXeEScpkWBEEQBEEQBEEQBEEQBEEQBIGDX99M38FAaZehAAAAAElFTkSuQmCC"
+		}
+	}
+}
