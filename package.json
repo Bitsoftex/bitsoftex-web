@@ -1,27 +1,62 @@
 {
-  "name": "bitsoftexnet",
-  "title": "Bitsoftex network",
-  "version": "3.3.9",
-  "homepage": "https://bitsoftex.com/",
-  "author": "Bitsoftex",
-  "license": {
-    "type": "CC-BY-NC-ND-4.0"
+  "name": "bitsoftex-web",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "typesafe-i18n": "typesafe-i18n",
+    "i18n:extract": "typesafe-i18n --no-watch",
+    "i18n:watch": "typesafe-i18n"
   },
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.18.5",
-    "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.3.1",
-    "gulp-header": "^1.8.8",
-    "gulp-less": "^3.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.0",
-    "qrcodesvg": "^1.0.2",
-    "jquery": "^3.1.1"
+    "@sveltejs/adapter-auto": "^8.0.0",
+    "@sveltejs/kit": "^3.0.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "ejs": "^7.0.2",
+    "hygen": "^6.2.11",
+    "json5": "^2.2.3",
+    "prompts": "^2.4.2",
+    "svelte": "^5.57.3",
+    "svelte-check": "^4.7.7",
+    "tiged": "^2.12.8",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/bitsoftex/bitsoftex.com.git"
-  }
+  "imports": {
+    "#lib": "./src/lib/index.js",
+    "#lib/*": "./src/lib/*",
+    "#data": "./src/data/index.js",
+    "#data/*": "./src/data/*",
+    "#components": "./src/lib/components/index.js",
+    "#components/*": "./src/lib/components/*",
+    "#modules/*": "./src/lib/modules/*"
+  },
+  "engines": {
+    "node": ">=22.17.0"
+  },
+  "dependencies": {
+    "@blockchainhub/blo": "^1.2.7",
+    "@blockchainhub/ican": "^0.4.3",
+    "@lucide/svelte": "^1.65.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "blockchain-wallet-validator": "^1.2.1",
+    "device-sherlock": "^0.2.1",
+    "exchange-rounding": "^1.1.9",
+    "payto-rl": "^1.1.9",
+    "tailwindcss": "^4.3.3",
+    "txms.js": "^1.4.0",
+    "typesafe-i18n": "^5.27.1",
+    "vite-plugin-pwa": "^2.0.0",
+    "zod": "^4.6.7"
+  },
+  "bin": {
+    "addon": "./bin/addon.mjs"
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }

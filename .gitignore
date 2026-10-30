@@ -1,13 +1,84 @@
-npm_modules
-bower_components
 node_modules
-trash
-Error.log
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
 .DS_Store
-.sass-cache
-.tmp
-.rvmrc
-.trashes
-*~
-*.sublime-project
-*.sublime-workspace
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+/bin/
+# AI Agents
+/.agents/
+/skills-lock.json
+
+# Extra ignores
+._*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+bun-debug.log*
+lerna-debug.log*
+*.log
+*.log.*
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Editor folders
+/.idea/
+/.vscode/
+/.history/
+/.swp
+/*.sublime-workspace
+/*.sublime-project
+
+# Addon cache
+/.addon-cache/
+/.hygen-tmp-*
+/_templates/
+
+# Output files
+/.output/
+/.vercel/
+/.netlify/
+/.wrangler/
+/.svelte-kit/
+/build/
+
+# Wrangler
+/wrangler.toml
+/wrangler.jsonc
+
+# Migration files
+/_migrations/
+/better-auth_migrations/
+
+# Lock files
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+/bun.lockb
+/deno.lock
+/npm-shrinkwrap.json
+/shrinkwrap.yaml
+/.pnp.cjs
+/.pnp.loader.mjs
+/skills-lock.json
