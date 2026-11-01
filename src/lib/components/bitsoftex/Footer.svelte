@@ -14,7 +14,7 @@
 			<div>
 				<a class="bx-brand" href="/" aria-label="Bitsoftex home">
 					{#if footer?.logo}<img src={footer.logo.src} width="36" height="36" alt="" />{/if}
-					<span>{config?.organizationName}<span class="brand-period">.</span></span>
+					<span>{config?.organizationName}<span class="brand-period" aria-hidden="true"></span></span>
 				</a>
 				<p>Intelligent software. Security at the core.</p>
 			</div>

@@ -22,7 +22,7 @@ const siteUrl = process.env.PUBLIC_SITE_URL || 'https://bitsoftex.eu'; // Site d
 
 // ─── Client config (no server-only keys; used in define and client bundles) ───
 const siteConfigClient: Config = {
-	title: 'Bitsoftex | AI Models & Software Security', // Site title
+	title: 'Bitsoftex | AI Engineering & Penetration Testing', // Site title
 	url: siteUrl,
 	organizationName: 'Bitsoftex', // Organization name - In most cases it's your GitHub username
 	projectName: 'bitsoftex-web', // Project name - In most cases it's your repo name
@@ -66,29 +66,27 @@ const siteConfigClient: Config = {
 			copyright: '© 2017–2026 Bitsoftex. All rights reserved.'
 		},
 		metadata: [
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }, // Viewport meta tag
-			{ name: 'theme-color', content: '#0b2246' }, // Theme color meta tag
-			{ name: 'description', content: 'Bitsoftex develops software, creates and configures AI models, and provides AI model security audits and OWASP-aligned application security reviews.' }, // Description meta tag
-			{ name: 'keywords', content: 'Bitsoftex, AI model setup, AI security audits, OWASP application security, software development' }, // Keywords meta tag
+			{ name: 'description', content: 'AI engineering, white-box, black-box and gray-box penetration testing. Bitsoftex finds security gaps, fixes bugs and reverse engineers software.' }, // Description meta tag
 			{ property: 'og:type', content: 'website' },
 			{ property: 'og:site_name', content: 'Bitsoftex' },
-			{ property: 'og:title', content: 'Bitsoftex | AI Models & Software Security' },
-			{ property: 'og:description', content: 'AI model setup, model security audits, and OWASP-aligned application reviews. Intelligent software. Security at the core.' },
+			{ property: 'og:title', content: 'Bitsoftex | AI Engineering & Penetration Testing' },
+			{ property: 'og:description', content: 'AI engineering, ethical penetration testing and reverse engineering. Find weaknesses, fix bugs and build stronger systems.' },
 			{ property: 'og:url', content: siteUrl },
-			{ property: 'og:image', content: `${siteUrl}/img/bitsoftex-social.png` },
+			{ property: 'og:image', content: `${siteUrl}/img/bitsoftex-security-social.jpg` },
 			{ property: 'og:image:width', content: '1200' },
 			{ property: 'og:image:height', content: '630' },
-			{ property: 'og:image:alt', content: 'Bitsoftex — AI models and software security' },
+			{ property: 'og:image:alt', content: 'Bitsoftex — AI engineering, penetration testing and reverse engineering' },
 			{ name: 'twitter:card', content: 'summary_large_image' },
-			{ name: 'twitter:title', content: 'Bitsoftex | AI Models & Software Security' },
-			{ name: 'twitter:description', content: 'AI model setup, security audits, and OWASP-aligned application reviews.' },
-			{ name: 'twitter:image', content: `${siteUrl}/img/bitsoftex-social.png` },
+			{ name: 'twitter:image:alt', content: 'AI security inspection illustration with a layered application and neural network core' },
+			{ name: 'twitter:title', content: 'Bitsoftex | AI Engineering & Penetration Testing' },
+			{ name: 'twitter:description', content: 'AI engineering, ethical penetration testing and reverse engineering. Find weaknesses, fix bugs and build stronger systems.' },
+			{ name: 'twitter:image', content: `${siteUrl}/img/bitsoftex-security-social.jpg` },
 			{ rel: 'canonical', href: siteUrl },
 		],
 		colorMode: {
 			defaultMode: 'light', // Default color mode
-			disableSwitch: true, // Disable color mode switch
-			respectPrefersColorScheme: false // Respect browser color scheme preference
+			disableSwitch: false, // Disable color mode switch
+			respectPrefersColorScheme: true // Respect browser color scheme preference
 		}
 	},
 	api: {
@@ -105,6 +103,8 @@ export default defineConfig({
 			adapter: adapter()
 		}),
 		VitePWA({
+			// Serve the manifest linked in app.html during local development too.
+			devOptions: { enabled: true },
 			registerType: 'autoUpdate',
 			outDir: '.svelte-kit/output/client',
 			injectRegister: false,
@@ -121,7 +121,7 @@ export default defineConfig({
 				name: 'Bitsoftex',
 				short_name: 'Bitsoftex',
 				description: 'AI models, software development and security audits by Bitsoftex',
-				theme_color: '#0b2246',
+				theme_color: '#FFFFFF',
 				icons: [
 					{
 						src: '/img/icons/192.png',

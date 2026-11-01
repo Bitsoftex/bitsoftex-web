@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { themeBootstrap } from '#lib/helpers/colorMode.js';
 	import Header from '#components/bitsoftex/Header.svelte';
 	import Footer from '#components/bitsoftex/Footer.svelte';
 	import type { Snippet } from 'svelte';
@@ -90,6 +91,7 @@
 </script>
 
 <svelte:head>
+	{@html `<script>${themeBootstrap}</script>`}
 	<title>{title ?? ''}</title>
 	{#if favicon}
 		<link rel="icon" href={favicon} type="image/svg+xml" />
@@ -111,12 +113,38 @@
 	{/if}
 	{@html `<script type="application/ld+json">${JSON.stringify({
 		'@context': 'https://schema.org',
-		'@type': 'Organization',
-		name: 'Bitsoftex',
-		url: cfg.url,
-		logo: `${cfg.url}/img/bitsoftex-logo.webp`,
-		email: 'contact@bitsoftex.eu',
-		description: 'Software development, AI model setup, AI model security audits and OWASP-aligned application security reviews.'
+		'@graph': [
+			{
+				'@type': 'Organization',
+				'@id': `${cfg.url}/#organization`,
+				name: 'Bitsoftex',
+				url: cfg.url,
+				logo: `${cfg.url}/img/bitsoftex-logo.webp`,
+				email: 'contact@bitsoftex.eu',
+				description: 'AI engineering, penetration testing, AI security audits, reverse engineering and custom software development.',
+				hasOfferCatalog: {
+					'@type': 'OfferCatalog',
+					name: 'Engineering and security services',
+					itemListElement: [
+						['AI engineering', 'AI model setup, application integration and custom development.'],
+						['Penetration testing', 'White-box, black-box and gray-box application security testing.'],
+						['AI security audits', 'Prompt injection, data exposure and connected tool permission testing.'],
+						['Reverse engineering', 'Software analysis, bug fixes, compatibility investigations and custom integrations.']
+					].map(([name, description]) => ({
+						'@type': 'Offer',
+						itemOffered: { '@type': 'Service', name, description, provider: { '@id': `${cfg.url}/#organization` } }
+					}))
+				}
+			},
+			{
+				'@type': 'WebSite',
+				'@id': `${cfg.url}/#website`,
+				name: 'Bitsoftex',
+				url: cfg.url,
+				inLanguage: 'en',
+				publisher: { '@id': `${cfg.url}/#organization` }
+			}
+		]
 	}).replace(/</g, '\u003c')}</script>`}
 
 </svelte:head>
